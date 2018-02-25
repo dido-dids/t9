@@ -12,7 +12,7 @@ const keyboard = {
 };
 
 /**
- * Takes number as an input and converts it to array of all possible strings combinations as of T9 on mobile phone
+ * Takes number as an input and converts it to array of all possible strings response as of T9 on mobile phone
  *
  * @param inputNumber
  * @returns {string[]}

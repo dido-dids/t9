@@ -1,0 +1,106 @@
+.App {
+    text-align: center;
+}
+
+.App-header {
+    background-color: #222;
+    height: 150px;
+    padding: 20px;
+    color: white;
+}
+
+.App-title {
+    font-size: 1.5em;
+}
+
+.App-intro {
+    font-size: large;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#phone {
+    width: 276px;
+    height: 676px;
+    background: url("../img/3310.png") no-repeat;
+    margin: 0 auto;
+    position: relative;
+
+  .display {
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    width: 175px;
+    height: 122px;
+    text-align: left;
+    color: #3b3e30;
+    font-weight: bold;
+    overflow: hidden;
+  }
+
+  .button {
+    position: absolute;
+    width: 52px;
+    height: 31px;
+    cursor: pointer;
+
+    .n1 {
+      top: 447px;
+      left: 32px;
+    }
+
+    .n2 {
+      top: 457px;
+      left: 113px;
+    }
+
+    .n3 {
+      top: 446px;
+      left: 194px;
+    }
+
+    .n4 {
+      top: 493px;
+      left: 34px;
+    }
+
+    .n5 {
+      top: 505px;
+      left: 113px;
+    }
+
+    .n6 {
+      top: 493px;
+      left: 191px;
+    }
+
+    .n7 {
+      top: 539px;
+      left: 38px;
+    }
+
+    .n8 {
+      top: 551px;
+      left: 113px;
+    }
+
+    .n9 {
+      top: 539px;
+      left: 188px;
+    }
+
+    .n0 {
+      top: 598px;
+      left: 113px;
+    }
+  }
+
+}
+
