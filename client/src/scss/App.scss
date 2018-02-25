@@ -1,37 +1,37 @@
 .App {
-    text-align: center;
+  text-align: center;
 }
 
 .App-header {
-    background-color: #222;
-    height: 150px;
-    padding: 20px;
-    color: white;
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
 }
 
 .App-title {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 .App-intro {
-    font-size: large;
+  font-size: large;
 }
 
 @keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 #phone {
-    width: 276px;
-    height: 676px;
-    background: url("../img/3310.png") no-repeat;
-    margin: 0 auto;
-    position: relative;
+  width: 276px;
+  height: 676px;
+  background: url("../img/3310.png") no-repeat;
+  margin: 0 auto;
+  position: relative;
 
   .display {
     position: absolute;
@@ -43,64 +43,119 @@
     color: #3b3e30;
     font-weight: bold;
     overflow: hidden;
-  }
+    overflow-y: auto;
 
-  .button {
-    position: absolute;
-    width: 52px;
-    height: 31px;
-    cursor: pointer;
-
-    .n1 {
-      top: 447px;
-      left: 32px;
-    }
-
-    .n2 {
-      top: 457px;
-      left: 113px;
-    }
-
-    .n3 {
-      top: 446px;
-      left: 194px;
-    }
-
-    .n4 {
-      top: 493px;
-      left: 34px;
-    }
-
-    .n5 {
-      top: 505px;
-      left: 113px;
-    }
-
-    .n6 {
-      top: 493px;
-      left: 191px;
-    }
-
-    .n7 {
-      top: 539px;
-      left: 38px;
-    }
-
-    .n8 {
-      top: 551px;
-      left: 113px;
-    }
-
-    .n9 {
-      top: 539px;
-      left: 188px;
-    }
-
-    .n0 {
-      top: 598px;
-      left: 113px;
+    p {
+      margin: 0;
+      padding: 0
     }
   }
 
+  .buttons {
+
+    position: relative;
+    top: 360px;
+
+    .button {
+      position: absolute;
+      cursor: pointer;
+
+      &.cancel {
+        top: 23px;
+        left: 46px;
+        height: 34px;
+        width: 45px;
+      }
+
+      &.up {
+        top: 19px;
+        left: 194px;
+        height: 35px;
+        width: 41px;
+      }
+
+      &.down {
+        top: 41px;
+        left: 154px;
+        height: 38px;
+        width: 41px;
+      }
+
+      &.number {
+        width: 52px;
+        height: 31px;
+
+        &.n1 {
+          top: 87px;
+          left: 32px;
+        }
+
+        &.n2 {
+          top: 97px;
+          left: 113px;
+        }
+
+        &.n3 {
+          top: 86px;
+          left: 194px;
+        }
+
+        &.n4 {
+          top: 133px;
+          left: 34px;
+        }
+
+        &.n5 {
+          top: 145px;
+          left: 113px;
+        }
+
+        &.n6 {
+          top: 133px;
+          left: 191px;
+        }
+
+        &.n7 {
+          top: 179px;
+          left: 38px;
+        }
+
+        &.n8 {
+          top: 191px;
+          left: 113px;
+        }
+
+        &.n9 {
+          top: 179px;
+          left: 188px;
+        }
+
+        &.n0 {
+          top: 238px;
+          left: 113px;
+        }
+      }
+    }
+
+  }
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #739d7e;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #3b3e30;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
