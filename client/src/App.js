@@ -4,6 +4,7 @@ import Phone from "./components/Phone";
 
 class App extends Component {
     state = {
+        cache: {},
         response: []
     };
 
@@ -24,10 +25,18 @@ class App extends Component {
             return;
         }
 
+        // response already fetched, returning from cache
+        if (this.state.cache[input]) {
+            this.setState((prevState) => ({response: prevState.cache[input]}));
+            return;
+        }
+
+        // response not fetched yet - call api
         this.callApi(input)
             .then(response => this.setState(
                 (prevState) => ({
-                    response: response
+                    response: response,
+                    cache: {[input]: response, ...prevState.cache}
                 })
             ))
             .catch(err => console.log(err));
