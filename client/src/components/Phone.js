@@ -22,7 +22,7 @@ class Phone extends Component {
     onClickCancel = () => {
         this.setState((prevState) => ({
             input: prevState.input.slice(0, -1)
-        }));
+        }))
     };
 
     componentDidUpdate(prevProps, prevState) {
@@ -38,7 +38,11 @@ class Phone extends Component {
     render() {
         return (
             <div id="phone">
-                <Display displayRef={ref => this.display = ref} input={this.state.input} response={this.props.response}/>
+                <Display
+                    displayRef={ref => this.display = ref}
+                    input={this.state.input}
+                    response={this.props.response}
+                />
                 <div className="buttons">
                     <Button className="number n1" onClick={() => this.onClickNumber(1)}/>
                     <Button className="number n2" onClick={() => this.onClickNumber(2)}/>
