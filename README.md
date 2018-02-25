@@ -7,10 +7,10 @@ cd client
 yarn install
 ```
 
-##Run 
+## Run 
 ```yarn start``` (from root) 
 
-##Build client
+## Build client
 ```
 cd client
 yarn build
